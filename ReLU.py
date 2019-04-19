@@ -2,8 +2,6 @@
 def get_model(n_ch, patch_height, patch_width):
 
     inputs = Input(shape=(n_ch,patch_height,patch_width))
-    
-    LRUA = 0.25
 
     # make it channels_last
     inputs_t = Lambda(lambda x: tf.transpose(x, (0,2,3,1)))(inputs)
