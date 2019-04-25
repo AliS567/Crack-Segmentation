@@ -381,6 +381,7 @@ masks_test = prepare_masks(masks_test)
 
 #Define the neural network
 #begin CNN Structure
+#CNN structure can be inserted between the above begin and "end CNN Structure"
 def get_model(n_ch, patch_height, patch_width):
 
     inputs = Input(shape=(n_ch,patch_height,patch_width))
